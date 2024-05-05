@@ -1,6 +1,6 @@
 ## Data Analysis Course - Phase 2
 
-This repository contains the materials for Phase 2 of the Data Analysis Course offered by iCodeGuru (Trainer: Zartashia Afzal, Moderator: Muhammad Husnain).
+This repository contains the materials for Phase 2 of the Data Analysis Course offered by iCodeGuru (Trainer: [Zartashia Afzal](https://www.linkedin.com/in/zartashiaafzal/), Moderator: [Muhammad Husnain](https://www.linkedin.com/in/husnainmuhammad/)).
 ![alt text](<WhatsApp Image 2024-05-04 at 10.36.30_d65d2c21.jpg>)
 
 **Course Description:**
