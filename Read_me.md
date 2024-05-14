@@ -1,7 +1,7 @@
 ## Data Analysis Course - Phase 2
 
 This repository contains the materials for Phase 2 of the Data Analysis Course offered by iCodeGuru (Trainer: [Zartashia Afzal](https://www.linkedin.com/in/zartashiaafzal/), Moderator: [Muhammad Husnain](https://www.linkedin.com/in/husnainmuhammad/)).
-![alt text](<WhatsApp Image 2024-05-04 at 10.36.30_d65d2c21.jpg>)
+![alt text](<course_poster.jpg>)
 
 **Course Description:**
 
@@ -27,7 +27,7 @@ Anyone can join us into this venture. It is generally recommended to have some u
 
 This repository will house the following course materials:
 
-* Lecture slides
+* Lecture slides (link provided in the pinned message of slack channel)
 * Jupyter Notebooks with code examples and exercises
 * Datasets used throughout the course
 * Quizzes and assignments
