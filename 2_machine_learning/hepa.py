@@ -32,10 +32,6 @@ if uploaded_file is not None:
     
     # Data preprocessing
     st.write("### Data Preprocessing")
-    # Encode categorical variables
-    label_encoder = LabelEncoder()
-    for col in df.select_dtypes(include=['object']).columns:
-        df[col] = label_encoder.fit_transform(df[col])
     
     # Feature Engineering - Selecting top features based on correlation
     corr = df.corr()
@@ -60,7 +56,7 @@ if uploaded_file is not None:
     X_train = scaler.fit_transform(X_train)
     X_test = scaler.transform(X_test)
     
-    # Model Training
+    # Model Training Using 3 for now
     st.write("### Model Training and Evaluation")
     models = {
         "Random Forest": RandomForestClassifier(),
@@ -68,6 +64,8 @@ if uploaded_file is not None:
         "Support Vector Machine": SVC()
     }
     
+    # Evaluating models and then comparing their metrics
+
     model_performance = {}
     
     for name, model in models.items():
@@ -84,7 +82,7 @@ if uploaded_file is not None:
     st.write("### Model Performance Comparison")
     st.bar_chart(performance_df.T)
     
-    # User input for prediction
+    # Taking input from user and then using that input for prediction
     st.write("### Prediction Inputs")
     user_inputs = {}
     for feature in top_features:
@@ -100,7 +98,7 @@ if uploaded_file is not None:
         for feature in top_features:
             full_input[df.columns.get_loc(feature) - 1] = user_inputs[feature]  # -1 because target is dropped
         
-        # Scale the input
+        # Scale the input (scikit learn do not accept 1D)
         full_input_scaled = scaler.transform(full_input.reshape(1, -1))
         
         # Predict with the chosen model
